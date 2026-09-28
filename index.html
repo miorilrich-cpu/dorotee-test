@@ -95,9 +95,6 @@ body {
 <a href="#course" onclick="toggleMenu()" class="flex items-center gap-3 p-3 hover:bg-pink-50 rounded-xl transition text-[15px]">
 <span class="text-[#ff85b3]"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg></span> คอร์สสอนทำเว็บ
 </a>
-<a href="#goodnote" onclick="toggleMenu()" class="flex items-center gap-3 p-3 hover:bg-pink-50 rounded-xl transition text-[15px]">
-<span class="text-[#ff85b3]"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg></span> Goodnote App
-</a>
 <a href="#contact" onclick="toggleMenu()" class="flex items-center gap-3 p-3 hover:bg-pink-50 rounded-xl transition text-[15px]">
 <span class="text-[#ff85b3]"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span> ติดต่อเรา
 </a>
@@ -168,7 +165,7 @@ NO COPY
 <h2 class="font-slackey text-xl text-[#5c3a21] bg-[#ffe4ef] inline-block px-6 py-1.5 rounded-full shadow-sm">Welcome to my shop</h2>
 </div>
 
-<!-- เพิ่มแบนเนอร์รูปภาพขนาด 1122x495 และปุ่มเช็คคิวข้างล่างแบนเนอร์ -->
+<!-- แบนเนอร์รูปภาพขนาด 1122x495 และปุ่มเช็คคิวข้างล่างแบนเนอร์ -->
 <div class="mb-10 text-center">
   <div class="overflow-hidden rounded-3xl shadow-md border-2 border-white bg-pink-100">
     <img src="https://picsum.photos/1122/495" alt="Banner" class="w-full h-auto object-cover block">
@@ -190,11 +187,6 @@ NO COPY
 </div>
 <!-- Slide 2 -->
 <div class="slide bg-gradient-to-r from-[#ffe4ef] to-[#ffb8d1] h-40 sm:h-56 flex flex-col items-center justify-center text-center p-4">
-<span class="font-slackey text-2xl sm:text-3xl text-[#5c3a21] mb-2">Goodnote App</span>
-<span class="text-sm text-[#7b5338] bg-white/50 px-4 py-1 rounded-full">เมลรวม 20.- เท่านั้น</span>
-</div>
-<!-- Slide 3 -->
-<div class="slide bg-gradient-to-r from-pink-100 to-[#ffe4ef] h-40 sm:h-56 flex flex-col items-center justify-center text-center p-4">
 <span class="font-slackey text-2xl sm:text-3xl text-[#5c3a21] mb-2">คอร์สสอนทำเว็บร้าน</span>
 <span class="text-sm text-[#7b5338] bg-white/50 px-4 py-1 rounded-full">ราคาโปรโมชั่น 299.-</span>
 </div>
@@ -210,7 +202,6 @@ NO COPY
 <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2" id="slider-dots">
 <button class="w-4 h-2 rounded-full bg-[#ff85b3] transition-all"></button>
 <button class="w-2 h-2 rounded-full bg-white/60 transition-all"></button>
-<button class="w-2 h-2 rounded-full bg-white/60 transition-all"></button>
 </div>
 </div>
 <!-- Intro Section -->
@@ -222,8 +213,8 @@ NO COPY
 </div>
 </div>
 <p class="text-[15px] sm:text-base leading-relaxed text-[#5c3a21]">
-ร้านจูรับทำเว็บไซด์ครบวงจร และจำหน่ายแอป Goodnote ทุกรูปแบบ<br>
-<span class="text-[#ff85b3] font-semibold text-lg mt-1 inline-block">เริ่มต้นที่ 20.- เท่านั้น</span>
+ร้านจูรับทำเว็บไซด์ครบวงจร<br>
+<span class="text-[#ff85b3] font-semibold text-lg mt-1 inline-block">เริ่มต้นที่ 129.- เท่านั้น</span>
 </p>
 </div>
 <!-- Services Section -->
@@ -243,7 +234,7 @@ NO COPY
 </p>
 </div>
 
-<!-- Portfolio Section: เปลี่ยนปุ่มให้กลายเป็นกรอบรูปโพลาลอยด์น่ารัก ใส่รูป 500*500 ได้ -->
+<!-- Portfolio Section: ปรับขนาดกรอบรูปโพลาลอยด์ให้เล็กลงเป็น 350x350 -->
 <div id="portfolio" class="mb-10 bg-[#5c3a21] rounded-2xl p-6 text-center shadow-md relative overflow-hidden mt-6">
 <!-- SVG พื้นหลัง -->
 <svg class="absolute -right-4 -bottom-4 opacity-10 w-24 h-24 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -254,28 +245,28 @@ NO COPY
 <h3 class="font-slackey text-white text-2xl font-medium mb-5 relative z-10">
 ตัวอย่างงานเว็บทิ้งจู คลิกที่นี่</h3>
 
-<!-- ส่วนกรอบรูปโพลาลอยด์น่ารัก (แทนปุ่มเดิม) สำหรับใส่รูป 500x500 -->
+<!-- กรอบรูปโพลาลอยด์ขนาด 350x350 -->
 <div class="flex flex-wrap justify-center gap-6 relative z-10">
   <!-- โพลาลอยด์ที่ 1: สดใส -->
-  <div onclick="openModal('modal-bright')" class="bg-white p-3 pt-3 pb-4 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-36 sm:w-40 border border-pink-200 group">
-    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-2 relative">
-      <img src="https://picsum.photos/500/500?random=1" alt="สดใส" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+  <div onclick="openModal('modal-bright')" class="bg-white p-2.5 pt-2.5 pb-3 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-28 sm:w-32 border border-pink-200 group">
+    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-1.5 relative">
+      <img src="https://picsum.photos/350/350?random=1" alt="สดใส" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
     </div>
     <span class="font-slackey text-xs text-[#5c3a21]">สดใส</span>
   </div>
 
   <!-- โพลาลอยด์ที่ 2: โทนมืด -->
-  <div onclick="openModal('modal-dark')" class="bg-white p-3 pt-3 pb-4 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-36 sm:w-40 border border-pink-200 group">
-    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-2 relative">
-      <img src="https://picsum.photos/500/500?random=2" alt="โทนมืด" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+  <div onclick="openModal('modal-dark')" class="bg-white p-2.5 pt-2.5 pb-3 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-28 sm:w-32 border border-pink-200 group">
+    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-1.5 relative">
+      <img src="https://picsum.photos/350/350?random=2" alt="โทนมืด" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
     </div>
     <span class="font-slackey text-xs text-[#5c3a21]">โทนมืด</span>
   </div>
 
   <!-- โพลาลอยด์ที่ 3: พาสเทล -->
-  <div onclick="openModal('modal-pastel')" class="bg-white p-3 pt-3 pb-4 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-36 sm:w-40 border border-pink-200 group">
-    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-2 relative">
-      <img src="https://picsum.photos/500/500?random=3" alt="พาสเทล" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+  <div onclick="openModal('modal-pastel')" class="bg-white p-2.5 pt-2.5 pb-3 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-28 sm:w-32 border border-pink-200 group">
+    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-1.5 relative">
+      <img src="https://picsum.photos/350/350?random=3" alt="พาสเทล" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
     </div>
     <span class="font-slackey text-xs text-[#5c3a21]">พาสเทล</span>
   </div>
@@ -407,64 +398,7 @@ NO COPY
 <a href="https://drive.google.com/drive/folders/1y4siEIS7i8XjYICoxJ_-fJH9ffywo92L" target="_blank" class="block w-full sm:w-auto text-center bg-white text-[#ff85b3] border-2 border-[#ff85b3] px-8 py-3 rounded-full text-sm font-medium hover:bg-[#ff85b3] hover:text-white transition shadow-sm">ดูตัวอย่างฟอนต์ทั้งหมด</a>
 </div>
 </div>
-<!-- Goodnote -->
-<div id="goodnote" class="mb-8 mt-6">
-<div class="text-center mb-8">
-<h2 class="font-slackey text-3xl font-bold text-[#5c3a21] mb-2">Goodnote App</h2>
-<p class="text-[15px] text-[#ff85b3]">แอปพลิเคชันสำหรับจดบันทึก</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-<!-- รุ่นพิเศษ -->
-<div class="border border-[#ffb8d1] rounded-2xl p-5 bg-white flex flex-col hover:shadow-md transition">
-<h4 class="font-semibold text-[#5c3a21] border-b border-pink-100 pb-3 mb-3 text-lg">รุ่นพิเศษ (ถาวร)</h4>
-<p class="text-xs text-pink-500 bg-pink-50 inline-block px-2 py-1 rounded-md mb-3 self-start">ใช้ได้เฉพาะไอโอเอส</p>
-<ul class="text-[13px] text-[#7b5338] space-y-2 mb-5 flex-1 pl-4 list-disc marker:text-pink-300">
-<li>สมุดโน๊ด ไวท์บอร์ด และเอกสารไม่จํากัด</li>
-<li>แชร์ลิ้งค์แบบสาธารณะ</li>
-<li>การถอดเสียงแบบไม่จำกัด</li>
-</ul>
-<div class="bg-pink-50 p-3 rounded-xl text-sm space-y-2">
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">เมลรวม</span> <b class="text-[#5c3a21]">20.-</b></p>
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">หาร 5 คน</span> <b class="text-[#5c3a21]">149.-</b></p>
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">ส่วนตัว</span> <b class="text-[#5c3a21]">490.-</b></p>
-</div>
-</div>
-<!-- Essential -->
-<div class="border border-[#ffb8d1] rounded-2xl p-5 bg-white flex flex-col hover:shadow-md transition">
-<h4 class="font-semibold text-[#5c3a21] border-b border-pink-100 pb-3 mb-3 text-lg">Essential (รายปี)</h4>
-<ul class="text-[13px] text-[#7b5338] space-y-2 mb-5 flex-1 pl-4 list-disc marker:text-pink-300">
-<li>ปลดล็อคข้อความ ลายมือ เสียง ฯลฯ</li>
-<li>สมุดโน๊ต ไวท์บอร์ด ไม่จํากัด</li>
-<li>ค้นคว้าคณิตศาสตร์ ai (525 เครดิต)</li>
-<li>ถอดเสียงไม่จํากัด</li>
-<li>แอนดรอยด์ วินโดว์ เว็บ iOS</li>
-</ul>
-<div class="bg-pink-50 p-3 rounded-xl text-sm space-y-2">
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">เมลรวม</span> <b class="text-[#5c3a21]">20.-</b></p>
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">หาร 5 คน</span> <b class="text-[#5c3a21]">79.-</b></p>
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">ส่วนตัว</span> <b class="text-[#5c3a21]">229.-</b></p>
-</div>
-</div>
-<!-- Pro -->
-<div class="border-2 border-[#ff85b3] rounded-2xl p-5 bg-[#fff0f5] flex flex-col relative overflow-hidden hover:shadow-md transition shadow-sm">
-<div class="absolute -right-8 top-3 bg-[#ff85b3] text-white text-[11px] font-bold py-1 px-10 rotate-45 shadow-sm">BEST</div>
-<h4 class="font-semibold text-[#5c3a21] border-b border-pink-200 pb-3 mb-3 text-lg">Pro (รายปี)</h4>
-<ul class="text-[13px] text-[#7b5338] space-y-2 mb-5 flex-1 pl-4 list-disc marker:text-pink-400">
-<li>มีครบทุกอย่างใน essential</li>
-<li>ค้นคว้าคณิตศาสตร์ ai (525 เครดิต)</li>
-<li>จดโน๊ตอัตโนมัติและสรุปแบบเรียลไทม์</li>
-<li>เชื่อมต่อ Google ปฏิทิน</li>
-<li>แชร์ลิ้งค์ส่วนตัว & ทํางานร่วมกันเรียลไทม์</li>
-</ul>
-<div class="bg-white p-3 rounded-xl text-sm space-y-2">
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">เมลรวม</span> <b class="text-[#5c3a21]">20.-</b></p>
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">หาร 5 คน</span> <b class="text-[#5c3a21]">149.-</b></p>
-<p class="flex justify-between items-center"><span class="text-[#ff85b3]">ส่วนตัว</span> <b class="text-[#5c3a21]">490.-</b></p>
-</div>
-</div>
-</div>
-<p class="text-xs text-center text-pink-500 mt-4 bg-pink-50 py-2 rounded-lg">* ถ้าจะใช้งานในระบบแอนดรอยด์วินโดว์หรือเว็บแนะนำเป็นแบบส่วนตัวอย่างเดียวค่ะ *</p>
-</div>
+
 <!-- Footer / Contact -->
 <div id="contact" class="mt-12 pt-8 border-t border-pink-100 text-center">
 <!-- ไอคอน Contact -->
@@ -489,7 +423,7 @@ NO COPY
 </div>
 </div>
 </main>
-<!-- Modals for Portfolios remain minimal -->
+<!-- Modals for Portfolios -->
 <!-- Modal: สดใส -->
 <div id="modal-bright" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden items-center justify-center z-50 px-4">
 <div class="bg-white rounded-3xl p-6 w-full max-w-sm border border-[#ff85b3] shadow-2xl modal-enter relative">
