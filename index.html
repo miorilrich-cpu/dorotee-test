@@ -29,7 +29,7 @@ body {
   color: var(--color-brown-dark);
   scroll-behavior: smooth;
 }
-/* ฟอนด์ส่วนหัว Slackey (เพิ่ม Mitr เป็น Fallback สำหรับภาษาไทย) */
+/* ฟอนต์ส่วนหัว Slackey (เพิ่ม Mitr เป็น Fallback สำหรับภาษาไทย) */
 .font-slackey {
   font-family: 'Slackey', 'Mitr', cursive;
 }
@@ -66,17 +66,11 @@ body {
 .slide {
   min-width: 100%;
 }
-/* Banner Aspect Ratio 1122:495 */
-.banner-container {
-  aspect-ratio: 1122 / 495;
-  width: 100%;
-}
 </style>
 </head>
 <body class="min-h-screen pb-12">
 <!-- Overlay สำหรับ Sidebar Menu -->
-<div id="menu-overlay" onclick="toggleMenu()" class="fixed inset-0 bg-black/30 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300"></div>
-
+<div id="menu-overlay" onclick="toggleMenu()" class="fixed inset-0 bg-black/35 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300"></div>
 <!-- Sidebar Menu -->
 <div id="side-menu" class="fixed inset-y-0 left-0 w-64 bg-white/95 backdrop-blur-md shadow-2xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out border-r border-pink-200">
 <div class="p-5 h-full flex flex-col">
@@ -90,7 +84,7 @@ body {
 <!-- Menu Links -->
 <div class="space-y-3 font-medium text-[#5c3a21] flex-1">
 <a href="#services" onclick="toggleMenu()" class="flex items-center gap-3 p-3 hover:bg-pink-50 rounded-xl transition text-[15px]">
-<span class="text-[#ff85b3]"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span> บริการของเรา
+<span class="text-[#ff85b3]"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span> บริการของเรา
 </a>
 <a href="#portfolio" onclick="toggleMenu()" class="flex items-center gap-3 p-3 hover:bg-pink-50 rounded-xl transition text-[15px]">
 <span class="text-[#ff85b3]"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></span> ตัวอย่างงาน
@@ -114,7 +108,6 @@ body {
 </div>
 </div>
 </div>
-
 <!-- Top Bar -->
 <div class="w-full bg-white/90 backdrop-blur-md border-b border-pink-200 py-3 px-4 flex justify-between items-center text-[10px] sm:text-xs font-slackey text-pink-400 font-medium uppercase tracking-wider sticky top-0 z-30 shadow-sm">
 <div class="flex items-center gap-2 sm:gap-3">
@@ -137,7 +130,6 @@ NO COPY
 <span class="hidden sm:inline border-l border-pink-200 pl-4">DO NOT STEAL</span>
 </div>
 </div>
-
 <!-- Main Container -->
 <main class="max-w-2xl mx-auto mt-6 sm:mt-10 px-4 relative z-0">
 <!-- The Clean Board -->
@@ -145,22 +137,29 @@ NO COPY
 <!-- Header Section -->
 <div class="text-center mb-8 relative flex flex-col items-center">
 <!-- Decorations (Stars & Sparkles) -->
+<!-- Top Left Sparkle -->
 <svg class="absolute top-2 left-2 sm:left-10 w-6 h-6 text-[#ff85b3] animate-pulse" viewBox="0 0 24 24" fill="currentColor">
 <path d="M12 0C12 0 12 10 22 12C12 14 12 24 12 24C12 24 12 14 2 12C12 10 12 0 12 0Z" />
 </svg>
+<!-- Top Right Star -->
 <svg class="absolute top-6 right-4 sm:right-12 w-5 h-5 text-[#ffb8d1] animate-bounce" style="animation-duration: 2.5s;" viewBox="0 0 24 24" fill="currentColor">
-<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
 </svg>
+<!-- Bottom Left Tiny Sparkle -->
 <svg class="absolute bottom-4 left-8 sm:left-16 w-4 h-4 text-[#ffb8d1] animate-pulse" style="animation-delay: 1s;" viewBox="0 0 24 24" fill="currentColor">
 <path d="M12 0C12 0 12 10 22 12C12 14 12 24 12 24C12 24 12 14 2 12C12 10 12 0 12 0Z" />
 </svg>
+<!-- Bottom Right Tiny Star -->
 <svg class="absolute bottom-8 right-8 sm:right-16 w-4 h-4 text-[#ff85b3]" viewBox="0 0 24 24" fill="currentColor">
-<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
 </svg>
 <!-- Profile Picture -->
 <div class="relative w-28 h-28 sm:w-32 sm:h-32 mb-2 group">
+<!-- Glow Effect -->
 <div class="absolute inset-0 bg-gradient-to-tr from-[#ff85b3] to-[#ffb8d1] rounded-full opacity-40 blur-md group-hover:opacity-60 transition duration-300"></div>
+<!-- Image -->
 <img src="https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg" alt="Profile Picture" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-md z-10 transition-transform duration-300 group-hover:scale-105">
+<!-- Cute Heart Badge -->
 <div class="absolute -bottom-1 -right-1 bg-white rounded-full p-1.5 shadow-sm z-20 border border-pink-100">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="#ff85b3"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 </div>
@@ -169,12 +168,24 @@ NO COPY
 <h2 class="font-slackey text-xl text-[#5c3a21] bg-[#ffe4ef] inline-block px-6 py-1.5 rounded-full shadow-sm">Welcome to my shop</h2>
 </div>
 
+<!-- เพิ่มแบนเนอร์รูปภาพขนาด 1122x495 และปุ่มเช็คคิวข้างล่างแบนเนอร์ -->
+<div class="mb-10 text-center">
+  <div class="overflow-hidden rounded-3xl shadow-md border-2 border-white bg-pink-100">
+    <img src="https://picsum.photos/1122/495" alt="Banner" class="w-full h-auto object-cover block">
+  </div>
+  <div class="mt-4">
+    <a href="https://lin.ee/t0qYbAl" target="_blank" class="inline-block border-2 border-dashed border-[#ff85b3] bg-[#fff0f5] text-[#ff85b3] font-slackey px-8 py-3 rounded-full hover:bg-[#ff85b3] hover:text-white transition duration-300 shadow-sm text-sm sm:text-base">
+      🌸 เช็คคิวงาน / สถานะคิว 🌸
+    </a>
+  </div>
+</div>
+
 <!-- Image Slider Section -->
 <div class="mb-10 relative rounded-3xl overflow-hidden shadow-md group">
 <div class="slider-track" id="slider-track">
 <!-- Slide 1 -->
 <div class="slide bg-gradient-to-r from-pink-200 to-pink-100 h-40 sm:h-56 flex flex-col items-center justify-center text-center p-4">
-<span class="font-slackey text-2xl sm:text-3xl text-[#5c3a21] mb-2">บริการรับทําเว็บไซด์</span>
+<span class="font-slackey text-2xl sm:text-3xl text-[#5c3a21] mb-2">บริการรับทำเว็บไซด์</span>
 <span class="text-sm text-[#7b5338] bg-white/50 px-4 py-1 rounded-full">เริ่มต้นเพียง 129.-</span>
 </div>
 <!-- Slide 2 -->
@@ -202,30 +213,28 @@ NO COPY
 <button class="w-2 h-2 rounded-full bg-white/60 transition-all"></button>
 </div>
 </div>
-
-<!-- Intro Section (รูปแบนเนอร์ขนาด 1122x495 + ย้ายปุ่มเช็คเครดิตมาไว้ด้านล่าง) -->
-<div id="services" class="text-center mb-10 mt-6">
-<!-- รูปภาพแบนเนอร์ ขนาด 1122*495 -->
-<div class="w-full rounded-2xl overflow-hidden shadow-sm border border-pink-100 bg-[#fff0f5] banner-container mb-4">
-<img src="https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg" alt="Banner" class="w-full h-full object-cover">
-</div>
-<!-- ปุ่ม เช็คเครดิต ย้ายมาไว้ข้างล่างรูปแบนเนอร์ -->
-<div class="flex justify-center">
-<a href="https://lin.ee/t0qYbAl" target="_blank" class="bg-[#ff85b3] text-white px-6 py-2.5 rounded-full hover:bg-[#ffb8d1] transition shadow-sm font-slackey text-sm tracking-wide">
-เช็คเครดิต
-</a>
+<!-- Intro Section -->
+<div id="services" class="text-center mb-10 bg-[#fff0f5] p-6 rounded-2xl border border-pink-100 shadow-sm mt-6">
+<!-- ไอคอน Services -->
+<div class="flex justify-center mb-4">
+<div class="bg-white rounded-full p-2.5 shadow-sm border border-pink-100 text-[#ff85b3]">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 </div>
 </div>
-
+<p class="text-[15px] sm:text-base leading-relaxed text-[#5c3a21]">
+ร้านจูรับทำเว็บไซด์ครบวงจร และจำหน่ายแอป Goodnote ทุกรูปแบบ<br>
+<span class="text-[#ff85b3] font-semibold text-lg mt-1 inline-block">เริ่มต้นที่ 20.- เท่านั้น</span>
+</p>
+</div>
 <!-- Services Section -->
 <div class="mb-10">
 <h3 class="font-slackey text-2xl font-semibold mb-4 flex items-center gap-2 text-[#ff85b3]">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-เว็บที่รับทํา หลากหลายประเภท
+เว็บที่รับทำ หลากหลายประเภท
 </h3>
 <ul class="space-y-3 text-[15px] sm:text-base mb-5 text-[#5c3a21]">
 <li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคาแอปพรีเมียม</li>
-<li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคารับเดิมเกมส์</li>
+<li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคารับเติมเกมส์</li>
 <li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคารับทำป้าย</li>
 <li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บอื่น ๆ สอบถามเพิ่มเติมได้ค่ะ</li>
 </ul>
@@ -234,32 +243,49 @@ NO COPY
 </p>
 </div>
 
-<!-- Popups for Sample Work -->
+<!-- Portfolio Section: เปลี่ยนปุ่มให้กลายเป็นกรอบรูปโพลาลอยด์น่ารัก ใส่รูป 500*500 ได้ -->
 <div id="portfolio" class="mb-10 bg-[#5c3a21] rounded-2xl p-6 text-center shadow-md relative overflow-hidden mt-6">
+<!-- SVG พื้นหลัง -->
 <svg class="absolute -right-4 -bottom-4 opacity-10 w-24 h-24 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+<!-- ไอคอนหัวใจน่ารักๆ -->
 <div class="flex justify-center mb-4 mt-2 relative z-10">
 <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffb8d1"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 </div>
-<h3 class="font-slackey text-white text-2xl font-medium mb-5 relative z-10">ตัวอย่างงานเว็บทิ้งจู คลิกที่นี่</h3>
-<div class="flex flex-wrap justify-center gap-4 relative z-10">
-<button onclick="openModal('modal-bright')" class="bg-white text-[#ff85b3] px-6 py-3 rounded-2xl hover:bg-[#ffe4ef] transition duration-300 text-sm font-medium border-4 border-[#ff85b3] shadow-md flex flex-col items-center justify-center min-w-[110px] transform hover:-translate-y-1">
-<span class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center mb-1 text-xs">✨</span>
-สดใส
-</button>
-<button onclick="openModal('modal-dark')" class="bg-white text-[#3a2515] px-6 py-3 rounded-2xl hover:bg-gray-100 transition duration-300 text-sm font-medium border-4 border-[#3a2515] shadow-md flex flex-col items-center justify-center min-w-[110px] transform hover:-translate-y-1">
-<span class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center mb-1 text-xs">🌙</span>
-โทนมืด
-</button>
-<button onclick="openModal('modal-pastel')" class="bg-white text-[#5c3a21] px-6 py-3 rounded-2xl hover:bg-[#fff0f5] transition duration-300 text-sm font-medium border-4 border-[#ffb8d1] shadow-md flex flex-col items-center justify-center min-w-[110px] transform hover:-translate-y-1">
-<span class="w-8 h-8 rounded-full bg-pink-50 flex items-center justify-center mb-1 text-xs">🎨</span>
-พาสเทล
-</button>
+<h3 class="font-slackey text-white text-2xl font-medium mb-5 relative z-10">
+ตัวอย่างงานเว็บทิ้งจู คลิกที่นี่</h3>
+
+<!-- ส่วนกรอบรูปโพลาลอยด์น่ารัก (แทนปุ่มเดิม) สำหรับใส่รูป 500x500 -->
+<div class="flex flex-wrap justify-center gap-6 relative z-10">
+  <!-- โพลาลอยด์ที่ 1: สดใส -->
+  <div onclick="openModal('modal-bright')" class="bg-white p-3 pt-3 pb-4 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-36 sm:w-40 border border-pink-200 group">
+    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-2 relative">
+      <img src="https://picsum.photos/500/500?random=1" alt="สดใส" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+    </div>
+    <span class="font-slackey text-xs text-[#5c3a21]">สดใส</span>
+  </div>
+
+  <!-- โพลาลอยด์ที่ 2: โทนมืด -->
+  <div onclick="openModal('modal-dark')" class="bg-white p-3 pt-3 pb-4 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-36 sm:w-40 border border-pink-200 group">
+    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-2 relative">
+      <img src="https://picsum.photos/500/500?random=2" alt="โทนมืด" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+    </div>
+    <span class="font-slackey text-xs text-[#5c3a21]">โทนมืด</span>
+  </div>
+
+  <!-- โพลาลอยด์ที่ 3: พาสเทล -->
+  <div onclick="openModal('modal-pastel')" class="bg-white p-3 pt-3 pb-4 rounded-xl shadow-lg cursor-pointer transform hover:-translate-y-1.5 transition duration-300 w-36 sm:w-40 border border-pink-200 group">
+    <div class="w-full aspect-square bg-pink-100 rounded-lg overflow-hidden mb-2 relative">
+      <img src="https://picsum.photos/500/500?random=3" alt="พาสเทล" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+    </div>
+    <span class="font-slackey text-xs text-[#5c3a21]">พาสเทล</span>
+  </div>
 </div>
 </div>
 
 <!-- Pricing Web -->
 <div id="pricing" class="mb-10">
 <div class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm mt-6">
+<!-- ไอคอน Price -->
 <div class="flex justify-center mb-4">
 <div class="bg-[#ffe4ef] rounded-full p-2.5 border border-pink-200 text-[#ff85b3]">
 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
@@ -269,7 +295,7 @@ NO COPY
 <p class="text-center text-[#ff85b3] font-semibold text-xl mb-2">ราคาเริ่มต้น 129.-</p>
 <p class="text-xs text-center text-[#7b5338] mb-5">(สำหรับรายละเอียดไม่เกิน 200 lines และใส่โลโก้อย่างเดียว)</p>
 <div class="text-[15px] space-y-3 mb-5">
-<p class="font-medium text-[#5c3a21] border-b border-pink-100 pb-2">กรณีเพิ่มรายละเอียด</p>
+<p class="font-medium text-[#5c3a21] border-b border-pink-100 pb-2">กรณีขึ้นเพิ่ม</p>
 <ul class="space-y-2 pl-2">
 <li class="flex justify-between items-center bg-gray-50 p-2 rounded-lg"><span>เกิน 200 lines</span> <span class="text-[#ff85b3] font-medium">เริ่มที่ 139.-</span></li>
 <li class="flex justify-between items-center bg-gray-50 p-2 rounded-lg"><span>เกิน 400 lines</span> <span class="text-[#ff85b3] font-medium">เริ่มที่ 189.-</span></li>
@@ -284,7 +310,6 @@ NO COPY
 <p class="text-[11px] text-[#7b5338] italic text-center">หมายเหตุ: ราคาขึ้นอยู่กับความละเอียดของข้อมูลและปริมาณเนื้อหา ทางร้านขอสงวนสิทธิ์ในการประเมินราคาตามความเหมาะสมนะคะ</p>
 </div>
 </div>
-
 <!-- Promotion -->
 <div class="mb-10 bg-gradient-to-br from-[#ffb8d1] to-[#ff85b3] rounded-2xl p-6 text-white shadow-md relative overflow-hidden">
 <svg class="absolute top-4 left-4 w-5 h-5 text-white/60 animate-pulse" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C12 0 12 10 22 12C12 14 12 24 12 24C12 24 12 14 2 12C12 10 12 0 12 0Z" /></svg>
@@ -312,7 +337,6 @@ NO COPY
 <span class="text-[15px] font-semibold bg-white text-[#ff85b3] px-6 py-2 rounded-full shadow-sm inline-block">ตกเว็บละ 100 นิดๆ คุ้มมาก</span>
 </div>
 </div>
-
 <!-- Steps & Conditions -->
 <div class="mb-10">
 <h3 class="font-slackey text-2xl font-semibold mb-5 text-[#5c3a21] inline-block">ขั้นตอน & เงื่อนไข</h3>
@@ -324,7 +348,6 @@ NO COPY
 <li class="flex gap-3"><svg class="w-5 h-5 flex-shrink-0 text-[#ffb8d1] mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> หากไม่เลือกเท็มเพลตแล้วอยากให้ออกแบบใหม่เป็นแนวเฉพาะของร้านนั้นๆ บวกเพิ่ม 200 บาท</li>
 </ul>
 </div>
-
 <!-- How to Order -->
 <div class="mb-10 bg-[#fff5f8] p-6 rounded-2xl shadow-sm">
 <h3 class="font-slackey text-xl font-semibold mb-4 text-[#ff85b3] flex items-center gap-2">
@@ -338,11 +361,10 @@ NO COPY
 <li>รอรับลิงก์</li>
 </ol>
 <div class="mt-5 text-[13px] bg-white p-4 rounded-xl border border-pink-100 space-y-2">
-<p class="text-pink-500 font-medium">#หมายเหตุ เนื่องจากข้อมูลของแต่ละบุคคล มากน้อยไม่เท่ากัน จึงคิดราคาก่อนส่งงานไม่ได้ค่ะ เพื่อความเท่าเทียมทั้ง 2 ฝ่าย ขอสงวนสิทธิ์ในการเก็บค่าบริการแบบข้างดันค่ะ</p>
+<p class="text-pink-500 font-medium">#หมายเหตุ เนื่องจากข้อมูลของแต่ละบุคคลมากน้อยไม่เท่ากัน จึงคิดราคาก่อนส่งงานไม่ได้ค่ะ เพื่อความเท่าเทียมทั้ง 2 ฝ่าย ขอสงวนสิทธิ์ในการเก็บค่าบริการแบบข้างดันค่ะ</p>
 <p class="text-pink-500 font-medium">#ทางร้านไม่รับเปลี่ยนโดเมนนะคะ</p>
 </div>
 </div>
-
 <!-- Rules -->
 <div class="mb-10">
 <h3 class="font-slackey text-2xl font-semibold mb-4 text-[#5c3a21]">กฎของร้าน</h3>
@@ -353,9 +375,9 @@ NO COPY
 <p>• งดจิกงดเร่งทุกกรณีนะคะ เค้าติดงานประจำจะรีบตอบกลับให้เร็วที่สุดค่ะโดยปกติแล้ว งานเว็บจะทำแค่สี่ถึง 8 ชั่วโมงโดยส่วนมากจะไม่เกิน 4 ชั่วโมงค่ะ</p>
 </div>
 </div>
-
 <!-- Course -->
 <div id="course" class="mb-10 bg-white border border-[#ff85b3] rounded-3xl p-8 text-center shadow-sm relative overflow-hidden mt-6">
+<!-- ไอคอน Course -->
 <div class="flex justify-center mb-4 relative z-10">
 <div class="bg-white rounded-full p-2.5 shadow-sm border border-pink-100 text-[#ff85b3]">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
@@ -370,7 +392,6 @@ NO COPY
 <a href="https://purple-wind-aced.cozyw75.workers.dev/" target="_blank" class="bg-pink-50 text-[#5c3a21] py-2.5 px-6 rounded-full text-sm font-medium hover:bg-pink-100 transition border border-pink-100">อ่านกฎเพิ่มเติมก่อนเข้าคอร์ส</a>
 </div>
 </div>
-
 <!-- Fonts -->
 <div class="mb-10 bg-[#fff0f5] p-6 rounded-3xl flex flex-col sm:flex-row items-center gap-6 shadow-sm">
 <div class="flex-1 text-center sm:text-left">
@@ -386,7 +407,6 @@ NO COPY
 <a href="https://drive.google.com/drive/folders/1y4siEIS7i8XjYICoxJ_-fJH9ffywo92L" target="_blank" class="block w-full sm:w-auto text-center bg-white text-[#ff85b3] border-2 border-[#ff85b3] px-8 py-3 rounded-full text-sm font-medium hover:bg-[#ff85b3] hover:text-white transition shadow-sm">ดูตัวอย่างฟอนต์ทั้งหมด</a>
 </div>
 </div>
-
 <!-- Goodnote -->
 <div id="goodnote" class="mb-8 mt-6">
 <div class="text-center mb-8">
@@ -394,6 +414,7 @@ NO COPY
 <p class="text-[15px] text-[#ff85b3]">แอปพลิเคชันสำหรับจดบันทึก</p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+<!-- รุ่นพิเศษ -->
 <div class="border border-[#ffb8d1] rounded-2xl p-5 bg-white flex flex-col hover:shadow-md transition">
 <h4 class="font-semibold text-[#5c3a21] border-b border-pink-100 pb-3 mb-3 text-lg">รุ่นพิเศษ (ถาวร)</h4>
 <p class="text-xs text-pink-500 bg-pink-50 inline-block px-2 py-1 rounded-md mb-3 self-start">ใช้ได้เฉพาะไอโอเอส</p>
@@ -408,6 +429,7 @@ NO COPY
 <p class="flex justify-between items-center"><span class="text-[#ff85b3]">ส่วนตัว</span> <b class="text-[#5c3a21]">490.-</b></p>
 </div>
 </div>
+<!-- Essential -->
 <div class="border border-[#ffb8d1] rounded-2xl p-5 bg-white flex flex-col hover:shadow-md transition">
 <h4 class="font-semibold text-[#5c3a21] border-b border-pink-100 pb-3 mb-3 text-lg">Essential (รายปี)</h4>
 <ul class="text-[13px] text-[#7b5338] space-y-2 mb-5 flex-1 pl-4 list-disc marker:text-pink-300">
@@ -423,6 +445,7 @@ NO COPY
 <p class="flex justify-between items-center"><span class="text-[#ff85b3]">ส่วนตัว</span> <b class="text-[#5c3a21]">229.-</b></p>
 </div>
 </div>
+<!-- Pro -->
 <div class="border-2 border-[#ff85b3] rounded-2xl p-5 bg-[#fff0f5] flex flex-col relative overflow-hidden hover:shadow-md transition shadow-sm">
 <div class="absolute -right-8 top-3 bg-[#ff85b3] text-white text-[11px] font-bold py-1 px-10 rotate-45 shadow-sm">BEST</div>
 <h4 class="font-semibold text-[#5c3a21] border-b border-pink-200 pb-3 mb-3 text-lg">Pro (รายปี)</h4>
@@ -442,9 +465,9 @@ NO COPY
 </div>
 <p class="text-xs text-center text-pink-500 mt-4 bg-pink-50 py-2 rounded-lg">* ถ้าจะใช้งานในระบบแอนดรอยด์วินโดว์หรือเว็บแนะนำเป็นแบบส่วนตัวอย่างเดียวค่ะ *</p>
 </div>
-
 <!-- Footer / Contact -->
 <div id="contact" class="mt-12 pt-8 border-t border-pink-100 text-center">
+<!-- ไอคอน Contact -->
 <div class="flex justify-center mb-5">
 <div class="bg-[#fff0f5] rounded-full p-3 text-[#ff85b3]">
 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -453,21 +476,20 @@ NO COPY
 <h3 class="font-slackey text-2xl text-[#5c3a21] mb-5">ช่องทางการติดต่อ</h3>
 <div class="flex justify-center gap-5 mb-8">
 <a href="https://www.facebook.com/profile.php?id=61554192600355" target="_blank" class="w-12 h-12 rounded-full bg-[#ffe4ef] text-[#ff85b3] flex items-center justify-center hover:bg-[#ff85b3] hover:text-white transition duration-300 shadow-sm">
-<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 9.8 12V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 9.8 9.95V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
 </a>
 <a href="https://lin.ee/t0qYbAl" target="_blank" class="w-12 h-12 rounded-full bg-[#ffe4ef] text-[#ff85b3] flex items-center justify-center hover:bg-[#ff85b3] hover:text-white transition duration-300 shadow-sm">
-<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22 10.5c0-4.14-4.48-7.5-10-7.5S2 6.36 2 10.5c0 3.73 3.61 6.87 8.35 7.4.29.04.68.12.78.36.1.22.05.57.02.81-.13.8-.04.22-.19.92.81.5 1.01-.42 5.43-3.2 7.42-5.48C21.05 13.63 22 12.16 22 10.5zm-11.4 2.8h-2.1c-.22 0-.4-.18-.4-.4V8.4c0-.22.18-.4.4-.4h2.1c.22 0 .4.18.4.4v4.1c0 .22-.18.4-.4.4zm3.6 0h-.6c-.22 0-.4-.18-.4-.4V8.4c0-.22.18-.4.4-.4h.6c.22 0 .4.18.4.4v4.1c0 .22-.18.4-.4.4zm3.6 0h-2.1c-.22 0-.4-.18-.4-.4V8.4c0-.22.18-.4.4-.4h.6v3.5h1.5c.22 0 .4.18.4.4v.4c0 .22-.18.4-.4.4zm-9.3-2.1l-1.5-2c-.1-.13-.26-.13-.36 0l-1.5 2c-.13.17.06.39.25.31l.8-.4v2.7c0 .22.18.4.4.4h.6c.22 0 .4-.18.4-.4V11.2l.8.4c.19.1.38-.13.25-.3z"/></svg>
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22 10.5c0-4.14-4.48-7.5-10-7.5S2 6.36 2 10.5c0 3.73 3.61 6.87 8.35 7.4.29.04.68.12.78.36.1.22.05.57.02.81-.13.8-.04.22-.19.92.81.5 1.01-.42 5.43-3.2 7.42-5.48C21.05 13.63 22 12.16 22 10.5zm-11.4 2.8h-2.1c-.22 0-.4-.18-.4-.4V8.4c0-.22.18-.4.4-.4h2.1c.22 0 .4.18.4.4v4.1c0 .22-.18.4-.4.4zm3.6 0h-.6c-.22 0-.4-.18-.4-.4V8.4c0-.22.18-.4.4-.4h.6c.22 0 .4.18.4.4v4.1c0 .22-.18.4-.4.4zm3.6 0h-2.1c-.22 0-.4-.18-.4-.4V8.4c0-.22.18-.4.4-.4h.6v3.5h1.5c.22 0 .4.18.4.4v.4c0 .22-.18.4-.4.4zm-9.3-2.1l-1.5-2c-.1-.13-.26-.13-.36 0l-1.5 2c-.13.17.06.39.25.31.8-.4v2.7c0 .22.18.4.4.4h.6c.22 0 .4-.18.4-.4V11.2l.8.4c.19.1.38-.13.25-.3z"/></svg>
 </a>
 <a href="https://www.instagram.com/pinkjulie.land" target="_blank" class="w-12 h-12 rounded-full bg-[#ffe4ef] text-[#ff85b3] flex items-center justify-center hover:bg-[#ff85b3] hover:text-white transition duration-300 shadow-sm">
-<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.26.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85 0-3.2.01-3.58.07-4.85.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.64-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07c-4.27.2-6.78 2.71-6.98 6.98C0 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.27 2.71 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.27-.2 6.78-2.71 6.98-6.98C24 15.67 24 15.26 24 12s-.01-3.67-.07-4.95c-.2-4.27-2.71-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 4 0 01-4 4zm6.4-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.26.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.64-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07c-4.27.2-6.78 2.71-6.98 6.98C0 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.27 2.71 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.27-.2 6.78-2.71 6.98-6.98C24 15.67 24 15.26 24 12s-.01-3.67-.07-4.95c-.2-4.27-2.71-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 4 0 01-4 4zm6.4-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
 </a>
 </div>
 <p class="text-xs text-[#ff85b3] tracking-widest font-medium">THANK YOU FOR CHOOSING PINKJULIELAND</p>
 </div>
 </div>
 </main>
-
-<!-- Modals for Portfolios -->
+<!-- Modals for Portfolios remain minimal -->
 <!-- Modal: สดใส -->
 <div id="modal-bright" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden items-center justify-center z-50 px-4">
 <div class="bg-white rounded-3xl p-6 w-full max-w-sm border border-[#ff85b3] shadow-2xl modal-enter relative">
@@ -476,17 +498,16 @@ NO COPY
 </button>
 <h3 class="font-slackey text-2xl text-center text-[#ff85b3] mb-5">หมวดหมู่ สดใส</h3>
 <div class="space-y-3">
-<a href="https://jeans.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.1 ยืนส์กระดุม</a>
+<a href="https://jeans.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.1 ยีนส์กระดุม</a>
 <a href="https://playing.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.2 กดเข้าสู่ร้าน</a>
 <a href="https://note.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.3 โน้ตเหลี่ยม 1</a>
 <a href="https://sodsai.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.4 โน้ตเหลี่ยม 2</a>
 </div>
 </div>
 </div>
-
 <!-- Modal: โทนมืด -->
 <div id="modal-dark" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden items-center justify-center z-50 px-4">
-<div class="bg-white rounded-3xl p-6 w-full max-w-sm border border-[#5c3a21] shadow-2xl relative">
+<div class="bg-white rounded-3xl p-6 w-full max-w-sm border border-[#5c3a21] shadow-2xl relative modal-enter">
 <button onclick="closeModal('modal-dark')" class="absolute top-4 right-4 text-gray-400 hover:text-[#5c3a21] bg-gray-50 rounded-full p-1">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 </button>
@@ -503,10 +524,9 @@ NO COPY
 </div>
 </div>
 </div>
-
 <!-- Modal: พาสเทล -->
 <div id="modal-pastel" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden items-center justify-center z-50 px-4">
-<div class="bg-white rounded-3xl p-6 w-full max-w-sm border border-[#ffb8d1] shadow-2xl relative">
+<div class="bg-white rounded-3xl p-6 w-full max-w-sm border border-[#ffb8d1] shadow-2xl relative modal-enter">
 <button onclick="closeModal('modal-pastel')" class="absolute top-4 right-4 text-gray-400 hover:text-pink-300 bg-gray-50 rounded-full p-1">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 </button>
@@ -524,7 +544,6 @@ NO COPY
 </div>
 </div>
 </div>
-
 <!-- Script for Modals & Slider -->
 <script>
 // Sidebar Menu Logic
@@ -532,16 +551,17 @@ function toggleMenu() {
   const menu = document.getElementById('side-menu');
   const overlay = document.getElementById('menu-overlay');
   if (menu.classList.contains('-translate-x-full')) {
+    // เปิดเมนู
     menu.classList.remove('-translate-x-full');
     overlay.classList.remove('hidden');
     setTimeout(() => overlay.classList.remove('opacity-0'), 10);
   } else {
+    // ปิดเมนู
     menu.classList.add('-translate-x-full');
     overlay.classList.add('opacity-0');
     setTimeout(() => overlay.classList.add('hidden'), 300);
   }
 }
-
 // Modal Logic
 function openModal(id) {
   const modal = document.getElementById(id);
@@ -550,7 +570,6 @@ function openModal(id) {
   modal.children[0].classList.remove('modal-exit');
   modal.children[0].classList.add('modal-enter');
 }
-
 function closeModal(id) {
   const modal = document.getElementById(id);
   const content = modal.children[0];
@@ -561,13 +580,12 @@ function closeModal(id) {
     modal.style.display = 'none';
   }, 200);
 }
-
 window.onclick = function(event) {
+  // ปิด Modal ถ้าคลิกพื้นที่ว่าง (และละเว้นถ้านั้นคือส่วนของเมนู)
   if (event.target.classList.contains('fixed') && !event.target.id.includes('menu')) {
     closeModal(event.target.id);
   }
 }
-
 // Slider Logic
 let currentSlide = 0;
 const track = document.getElementById('slider-track');
@@ -588,28 +606,24 @@ function updateSlider() {
     }
   });
 }
-
 function nextSlide() {
   currentSlide = (currentSlide + 1) % totalSlides;
   updateSlider();
   resetInterval();
 }
-
 function prevSlide() {
   currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
   updateSlider();
   resetInterval();
 }
-
 function startInterval() {
-  slideInterval = setInterval(nextSlide, 3500);
+  slideInterval = setInterval(nextSlide, 3500); // เปลี่ยนภาพทุกๆ 3.5 วินาที
 }
-
 function resetInterval() {
   clearInterval(slideInterval);
   startInterval();
 }
-
+// Initialize dots clicks
 dots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
     currentSlide = index;
@@ -617,7 +631,7 @@ dots.forEach((dot, index) => {
     resetInterval();
   });
 });
-
+// Start Auto Slide
 updateSlider();
 startInterval();
 </script>
