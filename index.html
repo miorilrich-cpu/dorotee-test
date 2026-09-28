@@ -7,7 +7,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Mitr:wght@300;400;500;600&family=Slackey&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css?family=Mitr:wght@300;400;500;600&family=Slackey&display=swap" rel="stylesheet">
 <style>
 :root {
   --color-pink-bg: #ffe4ef;
@@ -28,7 +29,7 @@ body {
   color: var(--color-brown-dark);
   scroll-behavior: smooth;
 }
-/* ฟอนต์ส่วนหัว Slackey (เพิ่ม Mitr เป็น Fallback สำหรับภาษาไทย) */
+/* ฟอนด์ส่วนหัว Slackey (เพิ่ม Mitr เป็น Fallback สำหรับภาษาไทย) */
 .font-slackey {
   font-family: 'Slackey', 'Mitr', cursive;
 }
@@ -173,7 +174,7 @@ NO COPY
 <div class="slider-track" id="slider-track">
 <!-- Slide 1 -->
 <div class="slide bg-gradient-to-r from-pink-200 to-pink-100 h-40 sm:h-56 flex flex-col items-center justify-center text-center p-4">
-<span class="font-slackey text-2xl sm:text-3xl text-[#5c3a21] mb-2">บริการรับทําเว็บไซต์</span>
+<span class="font-slackey text-2xl sm:text-3xl text-[#5c3a21] mb-2">บริการรับทําเว็บไซด์</span>
 <span class="text-sm text-[#7b5338] bg-white/50 px-4 py-1 rounded-full">เริ่มต้นเพียง 129.-</span>
 </div>
 <!-- Slide 2 -->
@@ -202,11 +203,13 @@ NO COPY
 </div>
 </div>
 
-<!-- Intro Section -->
+<!-- Intro Section (รูปแบนเนอร์ขนาด 1122x495 + ย้ายปุ่มเช็คเครดิตมาไว้ด้านล่าง) -->
 <div id="services" class="text-center mb-10 mt-6">
+<!-- รูปภาพแบนเนอร์ ขนาด 1122*495 -->
 <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-pink-100 bg-[#fff0f5] banner-container mb-4">
 <img src="https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg" alt="Banner" class="w-full h-full object-cover">
 </div>
+<!-- ปุ่ม เช็คเครดิต ย้ายมาไว้ข้างล่างรูปแบนเนอร์ -->
 <div class="flex justify-center">
 <a href="https://lin.ee/t0qYbAl" target="_blank" class="bg-[#ff85b3] text-white px-6 py-2.5 rounded-full hover:bg-[#ffb8d1] transition shadow-sm font-slackey text-sm tracking-wide">
 เช็คเครดิต
@@ -218,11 +221,11 @@ NO COPY
 <div class="mb-10">
 <h3 class="font-slackey text-2xl font-semibold mb-4 flex items-center gap-2 text-[#ff85b3]">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-เว็บที่รับทำ หลากหลายประเภท
+เว็บที่รับทํา หลากหลายประเภท
 </h3>
 <ul class="space-y-3 text-[15px] sm:text-base mb-5 text-[#5c3a21]">
 <li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคาแอปพรีเมียม</li>
-<li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคารับเติมเกมส์</li>
+<li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคารับเดิมเกมส์</li>
 <li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บเรทราคารับทำป้าย</li>
 <li class="flex items-center gap-3 bg-pink-50/50 p-2 rounded-xl"><svg class="w-4 h-4 flex-shrink-0 text-[#ffb8d1]" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8"/></svg> เว็บอื่น ๆ สอบถามเพิ่มเติมได้ค่ะ</li>
 </ul>
@@ -238,10 +241,19 @@ NO COPY
 <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffb8d1"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 </div>
 <h3 class="font-slackey text-white text-2xl font-medium mb-5 relative z-10">ตัวอย่างงานเว็บทิ้งจู คลิกที่นี่</h3>
-<div class="flex flex-wrap justify-center gap-3 relative z-10">
-<button onclick="openModal('modal-bright')" class="bg-[#ff85b3] text-white px-6 py-2.5 rounded-full hover:bg-white hover:text-[#ff85b3] transition duration-300 text-sm font-medium border-2 border-[#ff85b3] shadow-sm">สดใส</button>
-<button onclick="openModal('modal-dark')" class="bg-[#3a2515] text-white px-6 py-2.5 rounded-full hover:bg-white hover:text-[#3a2515] transition duration-300 text-sm font-medium border-2 border-[#3a2515] shadow-sm">โทนมืด</button>
-<button onclick="openModal('modal-pastel')" class="bg-[#ffb8d1] text-[#5c3a21] px-6 py-2.5 rounded-full hover:bg-white transition duration-300 text-sm font-medium border-2 border-[#ffb8d1] shadow-sm">พาสเทล</button>
+<div class="flex flex-wrap justify-center gap-4 relative z-10">
+<button onclick="openModal('modal-bright')" class="bg-white text-[#ff85b3] px-6 py-3 rounded-2xl hover:bg-[#ffe4ef] transition duration-300 text-sm font-medium border-4 border-[#ff85b3] shadow-md flex flex-col items-center justify-center min-w-[110px] transform hover:-translate-y-1">
+<span class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center mb-1 text-xs">✨</span>
+สดใส
+</button>
+<button onclick="openModal('modal-dark')" class="bg-white text-[#3a2515] px-6 py-3 rounded-2xl hover:bg-gray-100 transition duration-300 text-sm font-medium border-4 border-[#3a2515] shadow-md flex flex-col items-center justify-center min-w-[110px] transform hover:-translate-y-1">
+<span class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center mb-1 text-xs">🌙</span>
+โทนมืด
+</button>
+<button onclick="openModal('modal-pastel')" class="bg-white text-[#5c3a21] px-6 py-3 rounded-2xl hover:bg-[#fff0f5] transition duration-300 text-sm font-medium border-4 border-[#ffb8d1] shadow-md flex flex-col items-center justify-center min-w-[110px] transform hover:-translate-y-1">
+<span class="w-8 h-8 rounded-full bg-pink-50 flex items-center justify-center mb-1 text-xs">🎨</span>
+พาสเทล
+</button>
 </div>
 </div>
 
@@ -293,7 +305,7 @@ NO COPY
 </div>
 <div class="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
 <p class="font-medium">เว็บที่ 3 สามารถเลือกเองได้</p>
-<p class="text-xs opacity-90 mt-1">เลือกจากเทมเพลตที่มีเท่านั้น</p>
+<p class="text-xs opacity-90 mt-1">เลือกจากเท็มเพลทที่มีเท่านั้น</p>
 </div>
 </div>
 <div class="text-center mt-5">
@@ -309,7 +321,7 @@ NO COPY
 <li class="flex gap-3"><svg class="w-5 h-5 flex-shrink-0 text-[#ffb8d1] mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> งานเร่ง *2 ของราคา</li>
 <li class="flex gap-3"><svg class="w-5 h-5 flex-shrink-0 text-[#ffb8d1] mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> สามารถแคปหน้าเว็บที่อยากได้ของร้านเรา มาเป็นเรฟได้ หากไม่แคป แล้วแก้เยอะ จะทำให้กระทบคิวถัดไป</li>
 <li class="flex gap-3"><svg class="w-5 h-5 flex-shrink-0 text-[#ffb8d1] mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> เน้นย้ำหลังจากส่งงานให้รีเช็ค ตอบกลับภายในไม่เกิน 30 นาที</li>
-<li class="flex gap-3"><svg class="w-5 h-5 flex-shrink-0 text-[#ffb8d1] mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> หากไม่เลือกเทมเพลตแล้วอยากให้ออกแบบใหม่เป็นแนวเฉพาะของร้านนั้นๆ บวกเพิ่ม 200 บาท</li>
+<li class="flex gap-3"><svg class="w-5 h-5 flex-shrink-0 text-[#ffb8d1] mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> หากไม่เลือกเท็มเพลตแล้วอยากให้ออกแบบใหม่เป็นแนวเฉพาะของร้านนั้นๆ บวกเพิ่ม 200 บาท</li>
 </ul>
 </div>
 
@@ -326,7 +338,7 @@ NO COPY
 <li>รอรับลิงก์</li>
 </ol>
 <div class="mt-5 text-[13px] bg-white p-4 rounded-xl border border-pink-100 space-y-2">
-<p class="text-pink-500 font-medium">#หมายเหตุ เนื่องจากข้อมูลของแต่ละบุคคล มากน้อยไม่เท่ากัน จึงคิดราคาก่อนส่งงานไม่ได้ค่ะ เพื่อความเท่าเทียมทั้ง 2 ฝ่าย ขอสงวนสิทธิ์ในการเก็บค่าบริการแบบข้างต้นค่ะ</p>
+<p class="text-pink-500 font-medium">#หมายเหตุ เนื่องจากข้อมูลของแต่ละบุคคล มากน้อยไม่เท่ากัน จึงคิดราคาก่อนส่งงานไม่ได้ค่ะ เพื่อความเท่าเทียมทั้ง 2 ฝ่าย ขอสงวนสิทธิ์ในการเก็บค่าบริการแบบข้างดันค่ะ</p>
 <p class="text-pink-500 font-medium">#ทางร้านไม่รับเปลี่ยนโดเมนนะคะ</p>
 </div>
 </div>
@@ -337,8 +349,8 @@ NO COPY
 <div class="bg-[#f9f9f9] p-5 rounded-2xl text-[15px] space-y-3 border border-gray-100 text-[#5c3a21] leading-relaxed">
 <p>• โอนเงินแล้วไม่คืนเงินทุกกรณี ไม่ว่าจะราคาเริ่มต้น หรือ จ่ายเต็มแล้ว</p>
 <p>• ยกเลิกหลังตรวจงานแล้ว ไม่คืนเงิน และส่งงานให้ตามปกติ</p>
-<p>• ในอนาคตอาจมีการเปลี่ยนลิงก์ ไม่ว่าเหตุผลอะไรก็ตามแต่ หากนำลิงก์ไปเปลี่ยนโดเมนแล้วมีค่าใช้จ่ายเพิ่มเติม ทางร้านไม่รับผิดชอบทุกกรณี รับผิดชอบแค่ในส่วนของลิงก์มีปัญหา หลังจากแก้ไขแล้ว อยากนำไปเปลี่ยนโดเมนต่อก็สามารถทำได้ค่ะ เพราะในส่วนนี้หากใช้โดเมนเดิมก็ไม่เสียค่าใช้จ่ายใดๆค่ะ</p>
-<p>• งดจิกงดเร่งทุกกรณีนะคะ เค้าติดงานประจำจะรีบตอบกลับให้เร็วที่สุดค่ะ โดยปกติแล้ว งานเว็บจะทำแค่สี่ถึง 8 ชั่วโมง โดยส่วนมากจะไม่เกิน 4 ชั่วโมงค่ะ</p>
+<p>• ในอนาคตอาจมีการเปลี่ยนลิงก์ ไม่ว่าเหตุผลอะไรก็ตามแต่ หากนำลิงก์ไปเปลี่ยนโดเมนแล้วมีค่าใช้จ่ายเพิ่มเดิม ทางร้านไม่รับผิดชอบทุกกรณี รับผิดชอบแค่ในส่วนของลิงก์มีปัญหา หลังจากแก้ไขแล้ว อยากนำไปเปลี่ยนโดเมนต่อก็สามารถทำได้ค่ะ เพราะในส่วนนี้หากใช้โดเมนเดิมก็ไม่เสียค่าใช้จ่ายใดๆค่ะ</p>
+<p>• งดจิกงดเร่งทุกกรณีนะคะ เค้าติดงานประจำจะรีบตอบกลับให้เร็วที่สุดค่ะโดยปกติแล้ว งานเว็บจะทำแค่สี่ถึง 8 ชั่วโมงโดยส่วนมากจะไม่เกิน 4 ชั่วโมงค่ะ</p>
 </div>
 </div>
 
@@ -351,7 +363,7 @@ NO COPY
 </div>
 <div class="absolute top-0 right-0 w-24 h-24 bg-[#ffe4ef] rounded-bl-full -z-10"></div>
 <h3 class="text-2xl font-slackey text-[#5c3a21] mb-3">คอร์สสอนทำเว็บร้าน สไตล์ทิ้งจู</h3>
-<p class="text-[15px] text-[#7b5338] mb-4 leading-relaxed">สำหรับใครที่อยากทำเว็บเป็นแล้วนำไปสร้างรายได้<br>สอนตั้งแต่ 0 → ทำเป็นเว็บใช้งานได้จริง<br>มีเทมเพลตมากกว่า 20 แบบ แทบจะจับมือสอน สามารถสอบถาม รีเควสด์ได้ตามใจ</p>
+<p class="text-[15px] text-[#7b5338] mb-4 leading-relaxed">สำหรับใครที่อยากทำเว็บเป็นแล้วนำไปสร้างรายได้<br>สอนตั้งแต่ 0 → ท่าเป็นเว็บใช้งานได้จริง<br>มีเทมเพลดมากกว่า 20 แบบ แทบจะจับมือสอน สามารถสอบถาม รีเควสด์ได้ตามใจ</p>
 <p class="text-xl font-bold text-[#ff85b3] mb-6">ราคา 299.- <span class="text-sm line-through text-gray-400 font-normal ml-1">จากราคาปกติ 399.-</span></p>
 <div class="flex flex-col sm:flex-row gap-3 justify-center">
 <a href="https://drive.google.com/drive/folders/1fj024BhkgC1ctJeiwyZUG3USteSdzWzr" target="_blank" class="bg-[#ff85b3] text-white py-2.5 px-6 rounded-full text-sm font-medium hover:bg-[#ffb8d1] transition shadow-sm">ดูรายละเอียดคอร์ส</a>
@@ -365,8 +377,8 @@ NO COPY
 <h3 class="font-slackey text-2xl text-[#ff85b3] mb-3">พึงจูขายฟอนต์</h3>
 <p class="text-sm text-[#7b5338] mb-2 font-medium">ขั้นตอนการสั่งฟอนต์ :</p>
 <ol class="list-decimal list-inside text-sm text-[#7b5338] space-y-2">
-<li>เลือกฟอนต์ แจ้งสิทธิ์การใช้งาน (พาณิชย์/ส่วนตัว)</li>
-<li>ชำระยอด แปะสลิปและ E-mail</li>
+<li>เลือกฟอนด์ แจ้งสิทธิ์การใช้งาน (พาณิชย์/ส่วนตัว)</li>
+<li>ช่าระยอด แปะสลิปและ E-mail</li>
 <li>รอรับฟอนต์ได้เลย</li>
 </ol>
 </div>
@@ -386,7 +398,7 @@ NO COPY
 <h4 class="font-semibold text-[#5c3a21] border-b border-pink-100 pb-3 mb-3 text-lg">รุ่นพิเศษ (ถาวร)</h4>
 <p class="text-xs text-pink-500 bg-pink-50 inline-block px-2 py-1 rounded-md mb-3 self-start">ใช้ได้เฉพาะไอโอเอส</p>
 <ul class="text-[13px] text-[#7b5338] space-y-2 mb-5 flex-1 pl-4 list-disc marker:text-pink-300">
-<li>สมุดโน้ต ไวท์บอร์ด และเอกสารไม่จํากัด</li>
+<li>สมุดโน๊ด ไวท์บอร์ด และเอกสารไม่จํากัด</li>
 <li>แชร์ลิ้งค์แบบสาธารณะ</li>
 <li>การถอดเสียงแบบไม่จำกัด</li>
 </ul>
@@ -400,7 +412,7 @@ NO COPY
 <h4 class="font-semibold text-[#5c3a21] border-b border-pink-100 pb-3 mb-3 text-lg">Essential (รายปี)</h4>
 <ul class="text-[13px] text-[#7b5338] space-y-2 mb-5 flex-1 pl-4 list-disc marker:text-pink-300">
 <li>ปลดล็อคข้อความ ลายมือ เสียง ฯลฯ</li>
-<li>สมุดโน้ต ไวท์บอร์ด ไม่จํากัด</li>
+<li>สมุดโน๊ต ไวท์บอร์ด ไม่จํากัด</li>
 <li>ค้นคว้าคณิตศาสตร์ ai (525 เครดิต)</li>
 <li>ถอดเสียงไม่จํากัด</li>
 <li>แอนดรอยด์ วินโดว์ เว็บ iOS</li>
@@ -417,7 +429,7 @@ NO COPY
 <ul class="text-[13px] text-[#7b5338] space-y-2 mb-5 flex-1 pl-4 list-disc marker:text-pink-400">
 <li>มีครบทุกอย่างใน essential</li>
 <li>ค้นคว้าคณิตศาสตร์ ai (525 เครดิต)</li>
-<li>จดโน้ตอัตโนมัติและสรุปแบบเรียลไทม์</li>
+<li>จดโน๊ตอัตโนมัติและสรุปแบบเรียลไทม์</li>
 <li>เชื่อมต่อ Google ปฏิทิน</li>
 <li>แชร์ลิ้งค์ส่วนตัว & ทํางานร่วมกันเรียลไทม์</li>
 </ul>
@@ -464,7 +476,7 @@ NO COPY
 </button>
 <h3 class="font-slackey text-2xl text-center text-[#ff85b3] mb-5">หมวดหมู่ สดใส</h3>
 <div class="space-y-3">
-<a href="https://jeans.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.1 ยีนส์กระดุม</a>
+<a href="https://jeans.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.1 ยืนส์กระดุม</a>
 <a href="https://playing.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.2 กดเข้าสู่ร้าน</a>
 <a href="https://note.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.3 โน้ตเหลี่ยม 1</a>
 <a href="https://sodsai.cozyw75.workers.dev/" target="_blank" class="block bg-pink-50 p-3.5 rounded-xl text-center text-[#5c3a21] text-sm hover:bg-[#ffb8d1] transition shadow-sm">สดใสV.4 โน้ตเหลี่ยม 2</a>
